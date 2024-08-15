@@ -27,19 +27,19 @@ export default function Desktop() {
 
         <main className="flex-grow p-8 flex flex-col items-center">
           <h1 className="text-black text-center text-2xl font-semibold mb-6">
-            Please choose a study
+            Seleccione el estudio
           </h1>
           <div className="flex flex-col gap-4 md:flex-row md:justify-center md:space-x-4">
             <CardMain
               imageSrc={BrestCancerIcon}
-              title="Brest Cancer Study"
+              title="Estudio de Cáncer de Pecho"
               text="lorem Ipsum dolor sit amet, consectetur adipiscing elit sed, sed diam nonumy eirmod tempor"
               buttonText="Acceder"
               buttonLink="/brest-cancer-study/"
             />
             <CardMain
               imageSrc={ProstateCancerIcon}
-              title="Prostate Cancer Study"
+              title="Estudio de Cáncer de Prostata"
               text="lorem Ipsum dolor sit amet, consectetur adipiscing elit sed, sed diam nonumy eirmod tempor"
               buttonText="Acceder"
               buttonLink="/prostate-cancer-study/"
