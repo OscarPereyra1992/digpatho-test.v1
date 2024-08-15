@@ -28,17 +28,20 @@ git clone https://github.com/OscarPereyra1992/digpatho-test.v1.git
 cd digpatho-test.v1
 ```
 
-2. Configurar y Ejecutar con Docker
+### 2. Configurar y Ejecutar con Docker
+
 Este proyecto incluye Docker para simplificar la configuración y ejecución del entorno de desarrollo. Asegúrate de tener Docker y Docker Compose instalados en tu sistema.
 
-2.1. Configurar Variables de Entorno
+### 2.1. Configurar Variables de Entorno
+
 Crea un archivo .env en la raíz del proyecto y define las variables de entorno necesarias para el frontend. Asegúrate de que el archivo .env en la raíz del proyecto tenga el siguiente contenido:
 
 ```bash
 Copiar código
 NEXT_PUBLIC_API_URL=http://localhost:8000/api
 ```
-2.2. Construir y Ejecutar los Contenedores
+### 2.2. Construir y Ejecutar los Contenedores
+
 Construye y ejecuta los contenedores para el frontend y el backend utilizando Docker Compose:
 
 ```bash
@@ -50,24 +53,27 @@ Este comando construye las imágenes de Docker para el frontend y el backend, y 
 Frontend (Next.js): http://localhost:3000
 Backend (Django): http://localhost:8000
 
-2.3. Verificar el Estado de los Contenedores
+### 2.3. Verificar el Estado de los Contenedores
 Puedes verificar el estado de los contenedores con el siguiente comando:
 
 ```bash
 docker-compose ps
 ```
 
-2.4. Detener los Contenedores
+### 2.4. Detener los Contenedores
+
 Para detener los contenedores, puedes usar:
 
 ```bash
 docker-compose down
 ```
 
-3. Configuración sin Docker
+### 3. Configuración sin Docker
+
 Si prefieres configurar el proyecto sin Docker, sigue estos pasos:
 
-3.1. Configurar y Ejecutar el Frontend (Next.js)
+### 3.1. Configurar y Ejecutar el Frontend (Next.js)
+
 Navega al directorio del frontend:
 
 ```bash
@@ -87,14 +93,15 @@ Crea un archivo .env.local en la raíz del directorio frontend y define las vari
 NEXT_PUBLIC_API_URL=http://localhost:8000/api
 ```
 
-Inicia el servidor de desarrollo:
+### Inicia el servidor de desarrollo:
 
 ```bash
 npm run dev
 ```
 Accede a la aplicación en tu navegador en http://localhost:3000.
 
-3.2. Configurar y Ejecutar el Backend (Django)
+### 3.2. Configurar y Ejecutar el Backend (Django)
+
 Navega al directorio del backend:
 
 ```bash
@@ -128,8 +135,8 @@ python manage.py runserver
 
 Accede al backend en http://localhost:8000.
 
-Uso
+### Uso
 Una vez que los servidores estén en funcionamiento, podrás acceder a la aplicación web a través del navegador y empezar a utilizar las funcionalidades proporcionadas.
 
-Licencia
+### Licencia
 Este proyecto fue creado en base a una entrevista, no se permite su uso comercial.
